@@ -1,0 +1,71 @@
+1 - Oque e bug e debug
+
+- Bug: é um erro que ocorre no código, muitas vezes por erro do programador, e impede o
+funcionamento do software
+
+- Debug: Método de encontrar e resolver bugs, por meio de uma execução passo a passo do código,
+em JavaScript temos diversas estratégias para isso
+
+- Validação: Técnicas utilizadas para ter o mínimo de possivel de bugs no software
+
+2 - Strict Mode
+
+- O strict é um modo de desenvolvimento que deixa o Js mais rigoroso na hora de programar
+
+- Deve ser declarado no topo do arquivo ou de funções
+
+- O strict não limita recursos JS, ele baliza a forma que você programa
+
+- Bibliotecas famosas são todas feitas em strict
+
+3 - Depurando com console.log
+
+Método de debug console.log
+
+- O método log de console é muito utilizado para debug
+
+- Utilizamos diversas vezes nos nossos exemplos
+
+4 - Método de debug: debugger
+
+- O debugger é uma instrução que nos permite o debug no console do navegador
+
+- Podemos evidenciar valores das variáveis em tempo real e com o programa executando, o que ajuda
+bastante
+
+5 - Tratamento de dado por função
+
+- Nunca podemos confiar no dado que é passado pelo usuário
+
+- Sempre devemos criar validações e tratamento para os mesmos
+
+- Ao longo do curso aprenderemos diversas técnincas
+
+6 - Exception
+
+- As Exceptions são erros que nós geramos no programa
+
+- Este recurso faz o programa ser abortado, ou seja, ele não continua sua execução
+
+- Utilizamos o argumento Throw new error, com a mensagem de erro como argumento
+
+7 - Utilizando o try catch
+
+- Try Catch é um recurso famoso nas linguagens de programação
+
+- Onde tentamos executar algo em try, e se um erro ocorrer ele cai no block catch
+
+- Útil tanto para debug, como também no desenvolvimento de uma aplicação sólida
+
+8 - Finally 
+
+- O Finally é uma instrução que vai depois do bloco try catch
+
+- Ela é executada independente de haver algum erro ou não em try
+
+9 - Assertions
+
+- Assertions são quando os tratamentos de valores passadas pelo usuário, geram um erro
+
+- Porém este recurso tem como objetivo nos ajudar no desenvolvimento do programa, ou seja seria algo
+para devs e não usuários
