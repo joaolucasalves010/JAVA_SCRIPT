@@ -29,3 +29,19 @@
 - E index.html o arquivo / página que estamos acessando
 
 */
+
+// 3 - Conhecendo o HTML
+
+/*
+
+- HTML (hyper markup language) é uma linguagem de marcação
+
+- Onde estruturamos as páginas web, criando elementos
+
+- Os elementos são chamados de tags, que podem ser títulos, imagens, formulários e listas....
+
+- As tags caracterizadas por <p>Texto</p>
+
+- Podemos adicionar estilos ao HTML com CSS
+
+*/
