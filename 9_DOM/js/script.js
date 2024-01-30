@@ -45,3 +45,18 @@
 - Podemos adicionar estilos ao HTML com CSS
 
 */
+
+// 4 - A estrutura do HTML 
+
+/*
+
+- A estrutura do HTML tem duas partes importantes, head e body
+
+- A head é aonde vamos inserir as configurações da página como linkar o html o css e o JavaScript
+
+- A body é o contéudo principal da página nele está toda a parte visual como as tags, ou seja
+são todos os elementos visíveis para o usuário
+
+- As tags possuem atributos que configuram elementos
+
+/*
