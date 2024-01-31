@@ -95,3 +95,20 @@ propriedades dos objetos que alteram o DOM
 como click ou pressionar teclas do mouse 
 
 */
+
+// 7 - DOM
+
+/*
+
+- O DOM pode modificar completamente uma página
+
+- É possivel alterar: elementos, atributos,
+estilização;
+
+- Adicionamos e removemos elementos
+
+- O dom cria uma árvore do HTML, os elementos são chamados
+de nós
+
+imagem: https://cdn.discordapp.com/attachments/1201293976611848304/1202358674304012429/DOM.png?ex=65cd2ac6&is=65bab5c6&hm=393f4d8baf8cf443ee33752dd0cf62e19a179af107b3f444b85976707343e78f&
+*/
