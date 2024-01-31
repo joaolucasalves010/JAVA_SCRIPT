@@ -73,5 +73,25 @@ são todos os elementos visíveis para o usuário
 
 - JavaScript pode ser utilizado para manipular elementos do HTML e alterar estilos
 
+*/
+
+// 6 - HTML e o DOM
+
+/*
+
+HTML e o DOM
+
+- O DOM é uma representação do HTML da página
+
+- ele é utilizado para acessar o HTML através do JS
+(JavaScript), acessamos os elementos/tags
+
+- Assim podemos modificá-lo através dos métodos e 
+propriedades dos objetos que alteram o DOM
+
+- DOM vem de Document Object Model
+
+- Através dele também podemos atrelar venetos ao HTML,
+como click ou pressionar teclas do mouse 
 
 */
