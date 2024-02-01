@@ -146,6 +146,33 @@ console.log(document.body.childNodes[5])
 
 console.log(document.body.childNodes[5].childNodes[1].textContent)
 
+// 9 - Selecionando elementos
 
+/*
 
+- Temos várias formas de selecionar especificamente 
+um elemento, ou um conjunto deles
 
+- A diferença entre eles é a forma de seleção, que pode ser 
+por: id, classe e seletor de css
+
+- Alguns exemplos são: getElementByTagName,
+getElementById, querySelector
+
+*/
+
+// 10 - Encontrando elemento por tag
+
+/*
+
+- Com o método getElementsByTagName selecionamos 
+um conjunto de elementos por uma tag em comum
+
+- O argumento é uma string que leva a tag a ser
+selecionada
+
+*/
+
+const listItens = document.getElementsByTagName("li")
+
+console.log(listItens)
