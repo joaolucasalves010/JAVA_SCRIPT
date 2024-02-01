@@ -111,4 +111,39 @@ estilização;
 de nós
 
 imagem: https://cdn.discordapp.com/attachments/1201293976611848304/1202358674304012429/DOM.png?ex=65cd2ac6&is=65bab5c6&hm=393f4d8baf8cf443ee33752dd0cf62e19a179af107b3f444b85976707343e78f&
+
+"""Basicamente o DOM nos permite modificar elementos
+/tags por meio de js"""
+
 */
+
+// 8 - Movendo-se pelo DOM
+
+/*
+
+- Todos os elementos podem ser acessados através
+do document.body
+
+- A partir deste elemento pai, vamos encontrado os 
+childNodes(nós)
+
+- E podemos acessar suas propriedades, e consequentemente
+modificá-los
+
+*/
+
+console.log(document.body)
+
+console.log(document.body.childNodes)
+
+console.log(document.body.childNodes[1])
+
+console.log(document.body.childNodes[1].childNodes)
+
+console.log(document.body.childNodes[1].childNodes[1].textContent)
+
+
+
+
+
+
