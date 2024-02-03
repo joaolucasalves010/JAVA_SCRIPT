@@ -161,7 +161,7 @@ getElementById, querySelector
 
 */
 
-// 10 - Encontrando elemento por tag
+// 10 - Encontrando elementos por tag
 
 /*
 
@@ -176,3 +176,17 @@ selecionada
 const listItens = document.getElementsByTagName("li")
 
 console.log(listItens)
+
+// 11 - Encontrando elementos por id
+
+/*
+
+- Com o método getElementById selecionamos um único elemento, ja que o id é único na página
+
+- O argumento é uma string que leva o id ser selecionado
+
+*/
+
+const title = document.getElementById("title")
+
+console.log(title)
