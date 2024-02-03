@@ -190,3 +190,18 @@ console.log(listItens)
 const title = document.getElementById("title")
 
 console.log(title)
+
+// 12 - Encontrando elementos por classe
+
+/*
+
+- Com o método getElementByClassName, selecionamos um conjunto de elementos de uma classe em comum  
+
+- O argumento é uma string que leva a classe a ser selecionada
+
+- Veja como os atributos do HTML começam a fazer mais sentido em conjunto com o JS
+*/
+
+const products = document.getElementsByClassName('product')
+
+console.log(products)
