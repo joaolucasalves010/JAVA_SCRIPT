@@ -205,3 +205,21 @@ console.log(title)
 const products = document.getElementsByClassName('product')
 
 console.log(products)
+
+// 13 - Encontrando elementos por CSS
+
+/*
+
+- Com o método querySelectorAll selecionamos um conjunto de elementos por meio de um seletor de CSS
+
+- E com o querrySelector apenas um elemento, com base também um seletor de css
+
+*/
+
+const productsQuery = document.querySelectorAll('.product')
+
+console.log(productsQuery)
+
+const mainContainerQuery = document.querySelector('#main-container')
+
+console.log(mainContainerQuery)
