@@ -223,3 +223,47 @@ console.log(productsQuery)
 const mainContainerQuery = document.querySelector('#main-container')
 
 console.log(mainContainerQuery)
+
+// 14 - Alterando o HTML
+
+/*
+
+- Podemos mudar praticamente toda a página com DOM
+
+- Adicionar, remover e até clonar elementos
+
+- Alguns métodos muito utilizados são: insertBefore,
+appendChild, replaceChild
+
+*/
+
+// 15 - Alterando o HTML com insertBefore
+
+
+/*
+
+- O insertBefore cria um elemento antes de um outro elemento
+
+- É necessário criar um elemento com JS, isso pode ser feito
+com createElement
+
+- O elemento de referência pode ser selecionado com alguns dos 
+métodos que vimos antes
+
+*/
+
+var p = document.createElement('p')
+
+var header = title.parentElement
+
+header.insertBefore(p, title)
+
+// Outra forma de usar o insertBefore
+
+/* const p = document.createElement('p')
+
+// const header = document.querySelector('header')
+
+// const p2 = document.querySelector('header #title')
+
+header.insertBefore(p, p2) */
