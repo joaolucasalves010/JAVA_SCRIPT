@@ -267,3 +267,19 @@ header.insertBefore(p, title)
 // const p2 = document.querySelector('header #title')
 
 header.insertBefore(p, p2) */
+
+// 16 - Alterando o HTML com appendChild
+
+/*
+
+- Com o appendChild é possivel adicionar um elemento dentro do outro
+
+- Este elemento adicionado será o ultimo elemento do elemento pai
+
+*/
+
+const navLinks = document.querySelector("nav ul")
+
+const li = document.createElement('li')
+
+navLinks.appendChild(li)
