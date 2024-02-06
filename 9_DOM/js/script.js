@@ -283,3 +283,21 @@ const navLinks = document.querySelector("nav ul")
 const li = document.createElement('li')
 
 navLinks.appendChild(li)
+
+// 17 - Método replaceChild
+
+/*
+
+- Já o método replaceChild é utilizado para trocar um elemento
+
+- Novamente precisamos do elemento pai
+
+- E tambem o elemento para ser substituído e o que vai substituir
+
+*/
+
+const h2 = document.createElement('h2')
+
+h2.textContent = 'Meu novo título!'
+
+header.replaceChild(h2, title)
