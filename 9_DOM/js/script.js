@@ -326,3 +326,96 @@ h3.appendChild(myText)
 console.log(h3)
 
 mainContainerQuery.appendChild(h3)
+
+// 19 - Trabalhando atributos
+
+/*
+
+- Podemos ler e alterar valores dos atributos
+
+- para ler vamos utilizar o getAttribute
+
+- e para alterar utilizamos o setAttribute, este leva o nome do atributo e o valor para poder alterar
+
+*/
+
+const firstLink = navLinks.querySelector('a')
+
+console.log(firstLink)
+
+firstLink.setAttribute('href', 'https://www.google.com')
+
+console.log(firstLink.getAttribute('href'))
+
+firstLink.setAttribute('target', '_blank')
+
+firstLink.setAttribute('style', 'text-decoration: none')
+
+// 20 - Altura e largura dos elementos
+
+/*
+
+- É possivel também pegar valores de altura e largura de elementos
+
+- Vamos utilizar: offsetWidth e offsetHeight
+
+- Sem bordas, clientWidth e clientHeight
+
+*/
+
+var footer = document.querySelector('footer')
+
+console.log(footer.offsetWidth)
+console.log(footer.offsetHeight)
+
+console.log(footer.clientHeight)
+console.log(footer.clientWidth)
+
+// 21 - posição do elemento
+
+/*
+
+- Com o método getClientBoundingReact podemos pegar várias informações do elemento
+
+- como altura, largura, posição no eixo X, e Y e outras coisas
+
+*/
+
+const product1 = products[0]
+
+console.log(product1.getBoundingClientRect())
+
+// 22 - Alterando estilos do elemento
+
+/*
+
+Estilos com js
+
+- Todo elemento possui uma propriedade chamada style
+
+- A partir dela conseguimos alterar as regras de css
+
+- Note que regras separadas por traço viram camelCase
+
+*/
+
+mainContainerQuery.style.color = "red"
+
+mainContainerQuery.style.backgroundColor = '#333'
+
+mainContainerQuery.style.paddingBottom = "15px"
+
+// 23 - Estilizando vários itens / HTML collection
+
+/*
+
+- HTMLcollection aparece quando selecionamos vários elementos de uma vez
+
+- Podemos passar por cada um dos elementos com um for of, e estilizar individualmente cada item
+
+
+*/
+
+for (const li of listItens) {
+    li.style.backgroundColor = 'red'
+}
