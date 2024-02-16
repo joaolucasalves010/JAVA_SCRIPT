@@ -202,3 +202,21 @@ document.addEventListener('mousemove', function(e){
     // console.log(`No eixo x: ${e.x}`)
     // console.log(`No eixo y: ${e.y}`)
 })
+
+// 9 - Eventos por scroll
+
+/*
+
+- Podemos também adicionar um evento ao scroll do mouse/página
+
+- Isso é feito pelo evento scroll
+
+- Podemos determinar que algo aconteça apos chegar numa
+posição escolhida da tela
+*/
+
+window.addEventListener('scroll', function(){
+    if(window.pageYOffset > 200) {
+        console.log('Passamos de 200px')
+    }
+})
