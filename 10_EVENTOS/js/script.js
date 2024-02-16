@@ -153,3 +153,33 @@ a.addEventListener('click', function(e) { // É necessario passar o e ou event
 // document.addEventListener('keydown', function(e) {
 //     console.log(`Apertou a tecla ${e.key}`)
 // })
+
+// 7 - Mais eventos de mouse 
+
+/*
+
+- O mouse pode ativar outros eventos 
+
+- mousedown: pressionou botão do mouse
+
+- mouseup: soltou botão do mouse
+
+- dbclick: click duplo
+
+*/
+
+var mouseEvents = document.querySelector('#mouse')
+
+var botao = document.createElement('button')
+
+mouseEvents.addEventListener('mousedown', function() {
+    console.log('Apertou o botão')
+})
+
+mouseEvents.addEventListener('mouseup', function() {
+    console.log('soltou o botão')
+})
+
+mouseEvents.addEventListener('dblclick', function() {
+    console.log('Duplo click')
+})
