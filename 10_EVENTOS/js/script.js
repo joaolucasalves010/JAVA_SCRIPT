@@ -65,3 +65,28 @@ thirdBtn.addEventListener('click', () => {
     console.log('Evento Removido')
     secondBtn.removeEventListener('click', imprimirMensagem)
 })
+
+// 3 - Objeto do evento / Argumento do evento
+
+/*
+
+- Todo evento possui um argumento especial, que contém informações do mesmo
+
+- Geralmente chamado de event ou e
+
+*/
+
+var myTitle = document.querySelector('#my-title')   
+
+myTitle.addEventListener("click", function(event) {
+
+    // Com essas propriedades conseguimos extrair informações do evento
+
+    console.log(event) // Objeto do evento
+    console.log(event.srcElement) // Exibe o elemento
+    console.log(event.offsetX) // Mostra o elemento no eixo x
+    console.log(event.pointerType) // Tipo do click ou ponteiro
+    console.log(event.target) // Mostra o elemento alvo
+})
+
+
