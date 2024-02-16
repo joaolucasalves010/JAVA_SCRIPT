@@ -183,3 +183,22 @@ mouseEvents.addEventListener('mouseup', function() {
 mouseEvents.addEventListener('dblclick', function() {
     console.log('Duplo click')
 })
+
+// 8 - Movimento do mouse
+
+/*
+
+- É possível ativar um evento a partir da movimentação 
+do mouse
+
+- O evento é o mousemove
+
+- Com o objeto de evento podemos detetectar a posição do ponteiro
+do mouse
+
+*/
+
+document.addEventListener('mousemove', function(e){
+    // console.log(`No eixo x: ${e.x}`)
+    // console.log(`No eixo y: ${e.y}`)
+})
