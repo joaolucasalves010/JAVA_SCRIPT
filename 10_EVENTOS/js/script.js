@@ -131,3 +131,25 @@ a.addEventListener('click', function(e) { // É necessario passar o e ou event
     console.log('Não foi redirecionado')
 
 })
+
+// 6 - Eventos de Tecla
+
+/*
+
+- Os eventos de tecla mapeiam as ações no teclado
+
+- Temos a disposição o keyup e keydown
+
+- Keyup ativa quando a tecla é solta
+
+- E keyDown quando é pressionada
+
+*/
+
+// document.addEventListener('keyup', function(e) {
+//     console.log(`Soltou a tecla ${e.key}`)
+// })
+
+// document.addEventListener('keydown', function(e) {
+//     console.log(`Apertou a tecla ${e.key}`)
+// })
