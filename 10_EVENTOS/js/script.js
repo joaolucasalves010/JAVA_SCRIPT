@@ -109,3 +109,25 @@ insideBtnContainer.addEventListener('click', function(e) { //Temos que passar o 
     e.stopPropagation() // Usamos o stopPropagation no evento 2
     console.log('Evento 2')
 })
+
+// 5 - Prevent Default
+
+/*
+
+- Muitos elementos tem ações padrão no HTML
+
+- Como os links que nos levam a outras páginas
+
+- Podemos remover isso com o método preventDefault
+
+*/
+
+const a = document.querySelector('a')
+
+a.addEventListener('click', function(e) { // É necessario passar o e ou event
+
+    e.preventDefault() // Comando para remover ação padrão da tag
+
+    console.log('Não foi redirecionado')
+
+})
