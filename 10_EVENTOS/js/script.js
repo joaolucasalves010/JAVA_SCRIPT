@@ -33,10 +33,6 @@ const btn = document.querySelector('#my-button')
 btn.addEventListener('click', function() {
 
     console.log('Clicou no botão')
-
-    // Modificando o botão 
-    btn.style.color = 'green'
-    btn.style.background = 'hsl(0, 0%, 25%)'
 })
 
 // 2 - Removendo Eventos
@@ -89,4 +85,27 @@ myTitle.addEventListener("click", function(event) {
     console.log(event.target) // Mostra o elemento alvo
 })
 
+// 4 - Propagando eventos
 
+/*
+
+- Quando um elemento de um evento não é claramente definido pode
+haver propagação
+
+- Ou seja, um outro elemento ativar o evento
+
+- Para resolver este problema temos o método stopPropagation
+*/
+
+var btnContainer = document.querySelector('#btn-container')
+
+btnContainer.addEventListener('click', function() {
+    console.log('Evento 1')
+})
+
+var insideBtnContainer = document.querySelector('#inside-btn')
+
+insideBtnContainer.addEventListener('click', function(e) { //Temos que passar o e ou event de parametro
+    e.stopPropagation() // Usamos o stopPropagation no evento 2
+    console.log('Evento 2')
+})
