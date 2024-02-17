@@ -220,3 +220,26 @@ window.addEventListener('scroll', function(){
         console.log('Passamos de 200px')
     }
 })
+
+// 10 - Evento de focus/blur
+
+/*
+
+- O evento focus é disparado quando focamos em um elemento
+
+- Ja o blur é quando perde o foco do elemento
+
+- Este são comuns em inputs
+
+*/
+
+
+var input = document.querySelector('#my-input')
+
+input.addEventListener('focus', (e) => {
+    console.log('Entrou no input') // Focus 
+})
+
+input.addEventListener('blur', (e) => {
+    console.log('Saiu do input') // Blur 
+})
