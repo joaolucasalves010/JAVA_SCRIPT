@@ -243,3 +243,53 @@ input.addEventListener('focus', (e) => {
 input.addEventListener('blur', (e) => {
     console.log('Saiu do input') // Blur 
 })
+
+// 11 - Eventos de carregamento 
+
+/*
+
+- Podemos adicionar um evento ao carregar a página que é o load
+
+- E quando o usuário sai da página, que é o beforeunload
+
+*/
+
+
+// Obs <- Usar isso não é recomendado
+
+window.addEventListener('load', (e) => {
+    console.log('A página carregou')
+})
+
+window.addEventListener('beforeunload', (e) => {
+    e.preventDefault()
+})
+
+// 12 - Tecninca de Debounce
+
+/*
+
+- O debounce é uma tecninca utilizada para fazer um evento
+disparar menos vezes
+
+- Isso poupa memória do usuário, pois talvez nem sempre
+o evento seja necessário
+*/
+
+const debounce = (f, delay) => {
+    let timeout;
+
+    return (...args) => {
+        if(timeout) {
+            clearTimeout(timeout)
+        }
+        
+        timeout = setTimeout(() => {
+            f.apply(args)
+        }, delay)
+    }
+}
+
+window.addEventListener('mousemove', debounce(() => {
+    console.log('Executando a 400ms')
+}, 400))
