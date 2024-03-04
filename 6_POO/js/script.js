@@ -737,4 +737,36 @@ console.log(typeof(Mamifero))
 
 console.log(typeof(carreraGt))
 
-// Parabens Você Concluiu mais uma etapa até se tornar um dev profissional continue assim! :D
+    
+number = [6, 2, 8, 1, 10] // = 16
+
+function sumArray(array) {
+    let min = array[0]
+
+    for (let i = 0; i < array.length; i++) {
+        if (min > array[i]) {
+            min = array[i]
+        }       
+    }
+
+    let max = array[0]
+
+    for (let i = 0; i < array.length; i++) {
+        if (max < array[i]) {
+            max = array [i]
+        }
+    }
+
+    let sum = 0
+
+    for (let i = 0; i < array.length; i++) {
+        sum = sum + array[i]
+    }
+
+    const sumNumber = max + min
+    const result = sum - sumNumber
+
+    console.log(result)
+}
+
+sumArray(number)
