@@ -90,3 +90,8 @@ const users = [
     {name: 'Lucas', available: true},
 ]
 
+const availableUsers = users.filter((user) => user.available)
+
+availableUsers.forEach((user) => {
+    console.log(`O usuario(a) ${user.name} está disponivel!`) // Usando forEach para passar os usuários disponiveis
+})
