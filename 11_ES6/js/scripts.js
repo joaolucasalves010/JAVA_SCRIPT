@@ -87,6 +87,6 @@ const users = [
     {name: 'João', available: false},
     {name: 'Maria', available: true},
     {name: 'Josias', available: false},
-    {name: 'Kleber', available: true},
+    {name: 'Lucas', available: true},
 ]
 
