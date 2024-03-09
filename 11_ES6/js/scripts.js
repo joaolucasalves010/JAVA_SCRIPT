@@ -96,3 +96,26 @@ availableUsers.forEach((user) => {
     console.log(`O usuario(a) ${user.name} está disponivel!`) // Usando forEach para passar os usuários disponiveis
 })
 
+// 4 - Map
+const products = [
+    {name: "Camisa", price: 10.99, category: 'Roupas'},
+    {name: "Chaleira Eletrica", price: 150, category: 'Eletro'},
+    {name: "Fogão", price: 499, category: 'Eletro'},
+    {name: "Jeans", price: 87.99, category: 'Roupas'}
+]
+
+// products.map((product) => {
+//     if(product.category === 'Roupas') {
+//         product.onsale = true
+//     }
+// })
+
+// console.log(products)
+
+products.forEach((product) => {
+    if(product.category === 'Roupas') {
+        product.onsale = true
+    }
+})
+
+console.log(products)
