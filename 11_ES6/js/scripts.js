@@ -118,3 +118,22 @@ const userName = 'Matheus'
 const age = 21
 
 console.log(`O nome do usuário é ${userName} e ele tem ${age} anos`)
+
+// 6 - Destructuring
+
+const fruits = ['Maçã', 'Mamão', 'Laranja']
+
+const [f1, f2, f3] = fruits
+
+console.log(f1, f3)
+
+const productDetails = {
+    name: 'Mouse',
+    price: 39.99,
+    category: 'Periferico',
+    color: 'Cinza'
+}
+
+const {name: productName, price, category, color} = productDetails
+
+console.log(`O nome do produto é ${productName}, ele custa ${price} e é da cor ${color}`)
