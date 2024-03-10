@@ -2,7 +2,7 @@
 var x = 10
 var y = 15
 
-if (y > 10){
+if (y > 10) {
     var x = 5
     console.log(x)
 }
@@ -31,7 +31,7 @@ logName()
 console.log(name)
 
 // 2 - Arrow Functions 
-const sum = function(a, b){
+const sum = function (a, b) {
     return a + b
 }
 
@@ -41,10 +41,10 @@ console.log(sum(5, 5))
 console.log(arrowSum(5, 5))
 
 const greeting = (name) => {
-    
+
     if (name) {
         return `Hello ${name}`
-    }else {
+    } else {
         return 'Hello'
     }
 }
@@ -55,7 +55,7 @@ console.log(greeting())
 const user = {
     name: 'Theo',
     sayUserName() {
-        setTimeout(function() {
+        setTimeout(function () {
             console.log(this)
             console.log(`Username: ${this.name}`)
         }, 1000)
@@ -83,11 +83,11 @@ const highNumbers = arr.filter((n) => {
 console.log(highNumbers)
 
 const users = [
-    {name: 'Matheus', available: true},
-    {name: 'João', available: false},
-    {name: 'Maria', available: true},
-    {name: 'Josias', available: false},
-    {name: 'Lucas', available: true},
+    { name: 'Matheus', available: true },
+    { name: 'João', available: false },
+    { name: 'Maria', available: true },
+    { name: 'Josias', available: false },
+    { name: 'Lucas', available: true },
 ]
 
 const availableUsers = users.filter((user) => user.available)
@@ -98,24 +98,23 @@ availableUsers.forEach((user) => {
 
 // 4 - Map
 const products = [
-    {name: "Camisa", price: 10.99, category: 'Roupas'},
-    {name: "Chaleira Eletrica", price: 150, category: 'Eletro'},
-    {name: "Fogão", price: 499, category: 'Eletro'},
-    {name: "Jeans", price: 87.99, category: 'Roupas'}
+    { name: "Camisa", price: 10.99, category: 'Roupas' },
+    { name: "Chaleira Eletrica", price: 150, category: 'Eletro' },
+    { name: "Fogão", price: 499, category: 'Eletro' },
+    { name: "Jeans", price: 87.99, category: 'Roupas' }
 ]
 
-// products.map((product) => {
-//     if(product.category === 'Roupas') {
-//         product.onsale = true
-//     }
-// })
-
-// console.log(products)
-
-products.forEach((product) => {
-    if(product.category === 'Roupas') {
+products.map((product) => {
+    if (product.category === 'Roupas') {
         product.onsale = true
     }
 })
 
 console.log(products)
+
+// 5 - Template literals
+
+const userName = 'Matheus'
+const age = 21
+
+console.log(`O nome do usuário é ${userName} e ele tem ${age} anos`)
