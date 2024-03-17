@@ -203,7 +203,7 @@ console.log(hat.name)
 console.log(hat.showColors())
 
 console.log(hat.price)
-
+ 
 class Dog {
     constructor() {
         this.patas = 4
